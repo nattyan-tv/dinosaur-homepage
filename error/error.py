@@ -71,7 +71,7 @@ else:
         <hr class="content_border">
         <div id="root">
             <center>
-                <h3>{os.environ["REDIRECT_STATUS"]} {status(os.environ["REDIRECT_STATUS"])[0]}</h3>
+                <h3>{os.environ["REDIRECT_STATUS"]} - {status(os.environ["REDIRECT_STATUS"])[0]}</h3>
                 <div>{status(os.environ["REDIRECT_STATUS"])[1]}</div>
                 <div>10秒後に自動的にTOPに戻ります。</div>
             <center>
