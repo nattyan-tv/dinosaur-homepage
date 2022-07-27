@@ -59,6 +59,10 @@ body{
         border-width: 1px;
         border-color: #fff;
     }
+    summary{
+        color: #abcdfa;
+        text-decoration: underline;
+    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -89,9 +93,20 @@ body{
         border-width: 1px;
         border-color: #000;
     }
+    summary{
+        color: #abcdfa;
+        text-decoration: underline;
+    }
 }
 
 
 .hashtag{
     color: #1b7ec2;
+}
+
+.video{
+    max-width: 90vw;
+    width: 560px;
+    max-width: 90vw;
+    height: 315px;
 }
