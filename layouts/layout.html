@@ -17,15 +17,16 @@
         <script>
             // 外部リンクを`target=_blank`にして新しいタブで開くようにする。
             window.onload = function () {
-            let url;
-            for (element of document.getElementsByTagName("a")) {
-                url = element.getAttribute("href");
-                if (!url) continue;
-                if (!url.startsWith(window.location.origin) && url.startsWith("http"))
-                element.setAttribute("target", "_blank");
-            };
+                let url;
+                for (element of document.getElementsByTagName("a")) {
+                    url = element.getAttribute("href");
+                    if (!url) continue;
+                    if (!url.startsWith(window.location.origin) && url.startsWith("http"))
+                        element.setAttribute("target", "_blank");
+                };
             };
         </script>
+        ^^ self.ctx.head ^^
     </head>
     <body>
         <header id="header">
