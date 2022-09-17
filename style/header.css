@@ -1,0 +1,32 @@
+#header {
+    padding: 5px;
+    width: calc(100% - 10px);
+}
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content_border{
+    padding: 0px;
+    margin: 0px;
+    height: 1rem;
+    border: 0px #fff solid;
+}
+
+#header{
+    height: 35px;
+    text-align:center;
+    position:relative;
+}
+
+#header div{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+}
