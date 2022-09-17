@@ -17,27 +17,35 @@ class NewPage(Manager.page_cls):
     for key in list(MENTION_PREFIXES.keys()):
         MENTION_PREFIXES[MENTION_PREFIXES[key]] = MENTION_PREFIXES[key]
 
+    mtn_id = False
     _contents_data = None
     _contents_stack = []
 
     def make_tree(
         self, data: dict,
         parser: Callable[[str], str]
-            = lambda x: x
+            = lambda x: x,
+        put_id: bool = False
     ) -> str:
         "ツリーを作る。辞書から作れます。"
+        put_id_ = lambda k: f' id="{k}"' if put_id else ""
         return "{}{}{}".format("<dl>", "".join(
-            "<dt>{}</dt><dd>{}</dd>".format(
-                parser(key), self.make_tree(value, parser)
+            "<dt{}>{}</dt><dd>{}</dd>".format(
+                put_id_(key), parser(key),
+                self.make_tree(value, parser)
                     if isinstance(value, dict)
                     else value
-            ) if value else parser(key)
-            for key, value in data.items()
+            ) if value else "<span{}>{}</span>".format(
+                put_id_(key), parser(key)
+            ) for key, value in data.items()
         ), "</dl>")
 
     def mtn(self, target: str) -> str:
         "メンションを作ります。"
-        return f'<span class="mention">{target}</span>'
+        extend = ""
+        if self.mtn_id:
+            extend = f' id="{target}"'
+        return f'<span class="mention"{extend}>{target}</span>'
 
     def _collect_contents_data(self, reference: dict, data: dict | None = None) -> dict | str:
         # 再帰を行なって、目次の内容のデータを辞書に入れます。
@@ -72,7 +80,7 @@ class NewPage(Manager.page_cls):
         if self._contents_stack:
             return self._collect_contents_data(reference, data)
         else:
-            return data
+            return reference[""][""]
 
     def collect_contents_data(self) -> dict:
         "`self.make_tree`で使用可能な辞書形式のデータを、ドキュメント内にある見出しから作ります。"
@@ -109,17 +117,18 @@ class NewPage(Manager.page_cls):
         [("", "h1"), ("h1", "h2"), ("h1", "h2-2"), ("h2-2", "h3"), ("h1", "h2-3"), ("h2-3", "h3")]
         ```
         """
-        make_contents, contents_stack, parents, before = True, [], [], 0
-        for line in self.template.raw.splitlines():
-            if not make_contents and "^^" in line and "self.make_table_of_contents()" in line:
-                # テンプレートの中に目次を生成するためのものがある場合は、目次データの元を集める。
-                make_contents = True
+        # テンプレートの中に目次を生成するためのものがある場合は、目次データの元を集めるようにする。
+        make_contents = "collect_contents_data" in self.template.raw \
+            or "make_table_of_contents()" in self.template.raw
 
+        # 見出しにIDを割り振る。
+        contents_stack, parents, before = [], [], 0
+        for line in self.template.raw.splitlines():
             for i, prefix in enumerate(HEADDING_PREFIXES, 1):
                 if line.startswith(prefix):
                     new = line.replace(prefix, '', 1).replace('"', '\\"')
                     self.template.raw = self.template.raw.replace(
-                        line, f'<h{i} id="{new}">{new}</h1>', 1
+                        line, f'<h{i} id="{new}">{new}</h{i}>', 1
                     )
 
                     if make_contents:

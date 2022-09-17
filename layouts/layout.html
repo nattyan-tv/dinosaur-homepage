@@ -12,8 +12,20 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/style/body.css">
+        <link rel="stylesheet" href="/style/body.css?last_updated=^^ str(__import__('time').time()) ^^">
         <link rel="stylesheet" href="/style/header.css">
+        <script>
+            // 外部リンクを`target=_blank`にして新しいタブで開くようにする。
+            window.onload = function () {
+            let url;
+            for (element of document.getElementsByTagName("a")) {
+                url = element.getAttribute("href");
+                if (!url) continue;
+                if (!url.startsWith(window.location.origin) && url.startsWith("http"))
+                element.setAttribute("target", "_blank");
+            };
+            };
+        </script>
     </head>
     <body>
         <header id="header">
@@ -30,10 +42,9 @@
                 for prefix in self.MENTION_PREFIXES.keys():
                     if item.startswith(prefix):
                         self.content = self.content.replace(
-                            f" {item} ", '<span class="mention">%s</span>'
-                                % item.replace(
+                            f" {item} ", self.mtn(item.replace(
                                 prefix, self.MENTION_PREFIXES[prefix], 1
-                            )
+                            ))
                         )
                         did.add(item)
 
