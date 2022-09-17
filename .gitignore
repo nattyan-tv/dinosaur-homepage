@@ -1,1 +1,4 @@
 .htaccess
+.nisshi_caches.json
+__pycache__
+outputs
