@@ -24,7 +24,7 @@ Discordサーバーのルールについては[こちら](/rule/index.html)。
 あとはSteam版ARKを持っていることです。
 
 # 寄付について
-当サーバーはみなさんのご支援のもと運営されています[詳しくはこちら](/inputs/rule/dedicated_contribution.md.html)
+当サーバーはみなさんのご支援のもと運営されています[詳しくはこちら](/rule/dedicated_contribution.html)
 寄付していただいた方には多少の特典を用意しています
 
 # サーバールール
