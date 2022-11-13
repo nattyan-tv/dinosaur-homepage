@@ -8,7 +8,6 @@ Ark非公式サーバーサーバーのルールについては[こちら](/rule
 ##　便利MOD
   * ベストエッグ [MODページ](https://steamcommunity.com/sharedfiles/filedetails/?id=1931415003)
   * スパイグラス　[MODページ](https://steamcommunity.com/sharedfiles/filedetails/?id=1404697612)
-  
   * 転送不可アイテムを転送可能にする　[MODページ](https://steamcommunity.com/sharedfiles/filedetails/?id=2044129379)
   
 
