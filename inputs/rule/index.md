@@ -59,7 +59,7 @@ PC Steam版ARKの非公式サーバーに参加される方、参加したい方
 モバイル版ARKの非公式サーバーに参加される方、参加したい方は、[こちら](/rule/dedicated_mb.html)のルールに必ず目を通してください。（サーバーが立ってるかどうかは鯖主の気分です）  
 
 # Minecraftサーバーについて
-Minecraft 統合版サーバーに参加したい方は、[こちら](/rule/dedicated_minecraft.html)のルールに必ず目を通してください。  
+Minecraft 統合版もしくはJAVA版サーバーに参加したい方は、[こちら](/rule/dedicated_minecraft.html)のルールに必ず目を通してください。  
 
 ## 役職パネル
 サーバーに入ったら、 #役職パネル にてロールをつけましょう。  
