@@ -97,7 +97,7 @@ self.make_tree(
 ^^ self.mtn("役職パネル") ^^にて @Bumper や @Upper のロールを付与しましょう！  
 そして、ぜひ #bump-up部屋 でBump（/bump）やUp（/dissoku up）をしてください！  
 これをすると、検索の際にこのサーバーが表示されやすくなります！  
-また、Twitterをやってる人は、<span class="hashtag">#にら鯖</span>のタグをつけてなんかツイートしてくれたりしたら嬉しいです!
+また、Twitterをやってる人は、[#にら鯖](https://twitter.com/search?q=%2523%E3%81%AB%E3%82%89%E9%AF%96)のタグをつけてなんかツイートしてくれたりしたら嬉しいです!
 
 # 最後に
 ルール守って楽しいDiscordライフを。
