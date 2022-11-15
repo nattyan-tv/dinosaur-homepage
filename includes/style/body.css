@@ -34,6 +34,10 @@ code {
     padding: 3px;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 @keyframes Gradietion { 
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
@@ -68,11 +72,8 @@ code {
         background-color: #414675;
         color:#dee0fc;
     }
-    table{
-        color: #fff;
-        border-style:solid;
-        border-width: 1px;
-        border-color: #fff;
+    th, td{
+        border: solid 1px #fff;
     }
     summary{
         color: #abcdfa;
@@ -97,11 +98,8 @@ code {
         background-color: #e6e8fd;
         color:#505cdc;
     }
-    table{
-        color: #000;
-        border-style: solid;
-        border-width: 1px;
-        border-color: #000;
+    th, td{
+        border: solid 1px #000;
     }
     summary{
         color: #abcdfa;
