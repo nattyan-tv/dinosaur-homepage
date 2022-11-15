@@ -6,7 +6,9 @@ a {
     cursor:pointer;
 }
 
-img { max-width: 80vw; }
+img {
+    max-width: 80vw;
+}
 
 
 .main_content_frame{
@@ -38,15 +40,21 @@ code {
     100%{background-position:0% 50%}
 }
 
-@media (prefers-color-scheme: dark) {
-    #root{
+/* rootのベーススタイル */
+#root{
         margin: 0%;
         padding: 8px;
         width: calc(100% - 16px);
         min-height: calc(100% - 46px - 16px - 16px);
+        overflow-wrap: break-word;
+        position: absolute;
+}
+
+/* 各テーマごとの主に色スタイル */
+@media (prefers-color-scheme: dark) {
+    #root{
         background-color: #36393f;
         color: #dcddde;
-        overflow-wrap: break-word;
     }
     #root a{
         color: #66aef5;
@@ -74,13 +82,8 @@ code {
 
 @media (prefers-color-scheme: light) {
     #root{
-        margin: 0%;
-        padding: 8px;
-        width: calc(100% - 16px);
-        min-height: calc(100% - 46px - 16px - 16px);
         background-color: #fff;
         color: #000;
-        overflow-wrap: break-word;
     }
     #root a{
         color: #429bf5;
