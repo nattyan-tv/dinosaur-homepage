@@ -79,6 +79,9 @@ th, td {
     th, td{
         border: solid 1px #fff;
     }
+    table{
+        color: #fff;
+    }
     summary{
         color: #abcdfa;
         text-decoration: underline;
@@ -104,6 +107,9 @@ th, td {
     }
     th, td{
         border: solid 1px #000;
+    }
+    table{
+        color: #fff;
     }
     summary{
         color: #abcdfa;
