@@ -29,7 +29,7 @@ class NewPage(Manager.page_cls):
     ) -> str:
         "ツリーを作る。辞書から作れます。"
         put_id_ = lambda k: f' id="{k}"' if put_id else ""
-        return "{}{}{}".format("<dl>", "".join(
+        return "\n{}{}{}\n".format("<dl>", "".join(
             "<dt{}>{}</dt><dd>{}</dd>".format(
                 put_id_(key), parser(key),
                 self.make_tree(value, parser)
@@ -90,7 +90,7 @@ class NewPage(Manager.page_cls):
 
     def make_table_of_contents_from_data(self, data: dict) -> str:
         "渡された`self.make_tree`で扱える形式の辞書から、目次を作ります。"
-        return '<div id="table_contents">%s</div>' % self.make_tree(
+        return '\n<div id="table_contents">%s</div>\n' % self.make_tree(
             data, lambda v: f'<a href="#{v}">{v}</a><br>'
         )
 
@@ -128,7 +128,7 @@ class NewPage(Manager.page_cls):
                 if line.startswith(prefix):
                     new = line.replace(prefix, '', 1).replace('"', '\\"')
                     self.template.raw = self.template.raw.replace(
-                        line, f'<h{i} id="{new}">{new}</h{i}>', 1
+                        line, f'\n<h{i} id="{new}">{new}</h{i}>\n', 1
                     )
 
                     if make_contents:

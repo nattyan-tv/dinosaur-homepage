@@ -14,18 +14,16 @@
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/style/body.css?last_updated=^^ str(__import__('time').time()) ^^">
         <link rel="stylesheet" href="/style/header.css">
-        <script>
+        <script> window.addEventListener("load", (_) => {
             // 外部リンクを`target=_blank`にして新しいタブで開くようにする。
-            window.onload = function () {
-                let url;
-                for (element of document.getElementsByTagName("a")) {
-                    url = element.getAttribute("href");
-                    if (!url) continue;
-                    if (!url.startsWith(window.location.origin) && url.startsWith("http"))
-                        element.setAttribute("target", "_blank");
-                };
+            let url;
+            for (element of document.getElementsByTagName("a")) {
+                url = element.getAttribute("href");
+                if (!url) continue;
+                if (!url.startsWith(window.location.origin) && url.startsWith("http"))
+                    element.setAttribute("target", "_blank");
             };
-        </script>
+        }); </script>
         ^^ self.ctx.head ^^
     </head>
     <body>
