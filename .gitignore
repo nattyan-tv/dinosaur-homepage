@@ -1,4 +1,5 @@
 .htaccess
 .nisshi_caches.json
+.vscode
 __pycache__
 outputs
