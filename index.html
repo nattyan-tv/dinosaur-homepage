@@ -12,20 +12,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/style/body.css?last_updated=1668561487.4929678">
+        <link rel="stylesheet" href="/style/body.css?last_updated=1668833944.4330096">
         <link rel="stylesheet" href="/style/header.css">
-        <script>
+        <script> window.addEventListener("load", (_) => {
             // 外部リンクを`target=_blank`にして新しいタブで開くようにする。
-            window.onload = function () {
-                let url;
-                for (element of document.getElementsByTagName("a")) {
-                    url = element.getAttribute("href");
-                    if (!url) continue;
-                    if (!url.startsWith(window.location.origin) && url.startsWith("http"))
-                        element.setAttribute("target", "_blank");
-                };
+            let url;
+            for (element of document.getElementsByTagName("a")) {
+                url = element.getAttribute("href");
+                if (!url) continue;
+                if (!url.startsWith(window.location.origin) && url.startsWith("http"))
+                    element.setAttribute("target", "_blank");
             };
-        </script>
+        }); </script>
         
     </head>
     <body>
@@ -35,21 +33,14 @@
         <hr class="content_border">
         <div id="root">
             <h1 id="サーバー紹介">サーバー紹介</h1>
-
-<p>このサーバーは「初心者から玄人、誰でも楽しくARKをできる」をコンセプトに運営しているサーバーです。  </p>
-
-<hr>
-
+<p>このサーバーは「初心者から玄人、誰でも楽しくARKをできる」をコンセプトに運営しているサーバーです。</p>
+<hr />
 <p><a href="/rule">ARK非公式サーバーとかのルールはこちら！</a></p>
-
-<hr>
-
-<p>もしホームページに不具合とか、改善してほしい点とかあったらこちらからどうぞ！<br>
-issueの投稿にはGitHubアカウント（無料）の作成が必要です。<br>
+<hr />
+<p>もしホームページに不具合とか、改善してほしい点とかあったらこちらからどうぞ！<br />
+issueの投稿にはGitHubアカウント（無料）の作成が必要です。<br />
 それか<span class="mention">＠てりにら</span>に直接言ってください</p>
-
-<hr>
-
+<hr />
 <p>レポジトリ：<a href="https://github.com/nattyan-tv/dinosaur-homepage">nattyan-tv/dinosaur-homepage</a></p>
 
         </div>

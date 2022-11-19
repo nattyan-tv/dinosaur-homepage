@@ -12,20 +12,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/style/body.css?last_updated=1668561487.50818">
+        <link rel="stylesheet" href="/style/body.css?last_updated=1668833944.4508152">
         <link rel="stylesheet" href="/style/header.css">
-        <script>
+        <script> window.addEventListener("load", (_) => {
             // 外部リンクを`target=_blank`にして新しいタブで開くようにする。
-            window.onload = function () {
-                let url;
-                for (element of document.getElementsByTagName("a")) {
-                    url = element.getAttribute("href");
-                    if (!url) continue;
-                    if (!url.startsWith(window.location.origin) && url.startsWith("http"))
-                        element.setAttribute("target", "_blank");
-                };
+            let url;
+            for (element of document.getElementsByTagName("a")) {
+                url = element.getAttribute("href");
+                if (!url) continue;
+                if (!url.startsWith(window.location.origin) && url.startsWith("http"))
+                    element.setAttribute("target", "_blank");
             };
-        </script>
+        }); </script>
         
     </head>
     <body>
@@ -35,28 +33,24 @@
         <hr class="content_border">
         <div id="root">
             <h1 id="マインクラフトサーバーについて">マインクラフトサーバーについて</h1>
-マインクラフトの統合版とJAVA版サーバーがあります  
-ルールを守り楽しく遊びましょう
-
----
-
+<p>マインクラフトの統合版とJAVA版サーバーがあります<br />
+ルールを守り楽しく遊びましょう</p>
+<hr />
 <h2 id="目次">目次</h2>
-<div id="table_contents"><dl><dt><a href="#マインクラフトサーバーについて">マインクラフトサーバーについて</a><br></dt><dd><dl><span><a href="#目次">目次</a><br></span><span><a href="#サーバー参加方法">サーバー参加方法</a><br></span><span><a href="#サーバー参加条件">サーバー参加条件</a><br></span><span><a href="#サーバールール">サーバールール</a><br></span><span><a href="#サーバーの設定">サーバーの設定</a><br></span><span><a href="#最後に">最後に</a><br></span></dl></dd></dl></div>
-
----
-
+<div id="table_contents">
+<dl><dt><a href="#マインクラフトサーバーについて">マインクラフトサーバーについて</a><br></dt><dd>
+<dl><span><a href="#目次">目次</a><br></span><span><a href="#サーバー参加方法">サーバー参加方法</a><br></span><span><a href="#サーバー参加条件">サーバー参加条件</a><br></span><span><a href="#サーバールール">サーバールール</a><br></span><span><a href="#サーバーの設定">サーバーの設定</a><br></span><span><a href="#最後に">最後に</a><br></span></dl>
+</dd></dl>
+</div>
+<hr />
 <h1 id="サーバー参加方法">サーバー参加方法</h1>
-<span class="mention">＃マイクラ参加申請</span>で参加希望と言ってください。  
-管理人が専用ロールをつけたらメッセージに👍のリアクションがされます。
-
-接続方法は[こちら](/rule/dedicated_minecraft_join.html)
-
+<p>#マイクラ参加申請 で参加希望と言ってください。<br />
+管理人が専用ロールをつけたらメッセージに👍のリアクションがされます。<br />
+接続方法は<a href="/rule/dedicated_minecraft_join.html">こちら</a></p>
 <h1 id="サーバー参加条件">サーバー参加条件</h1>
-常識のある方。  
-ルールを守れる方。
-
+<p>常識のある方。<br />
+ルールを守れる方。</p>
 <h1 id="サーバールール">サーバールール</h1>
-
 <ul>
 <li>初期リスはなるべく改変しない</li>
 <li>盗まない。</li>
@@ -65,66 +59,20 @@
 <li>嫌がらせ禁止</li>
 <li>装置・トラップなどは初期リスからはなし設置する（スマホの人が動けなくならないように）</li>
 <li>放置するときはほかの人に言ってからお願いします</li>
-<li>夜は寝たい人がいれば寝る　寝れない場合ログアウトして夜を飛ばす<br></li>
+<li>夜は寝たい人がいれば寝る　寝れない場合ログアウトして夜を飛ばす</li>
 </ul>
-
 <h1 id="サーバーの設定">サーバーの設定</h1>
-
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>統合版</th>
-<th>JAVA版</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>名前</td>
-<td>dinosaur</td>
-<td>dinosaur</td>
-</tr>
-<tr>
-<td>モード</td>
-<td>サバイバル</td>
-<td>サバイバル</td>
-</tr>
-<tr>
-<td>難易度</td>
-<td>ハード　　</td>
-<td>ハード</td>
-</tr>
-<tr>
-<td>無操作タイムアウト</td>
-<td>30分　　　</td>
-<td>６時間</td>
-</tr>
-<tr>
-<td>最大描画距離    　</td>
-<td>32チャンク</td>
-<td>32チャンク</td>
-</tr>
-<tr>
-<td>シュミレーション距離</td>
-<td>6 チャンク</td>
-<td>10チャンク</td>
-</tr>
-<tr>
-<td>最大人数　　</td>
-<td>20</td>
-<td>20</td>
-</tr>
-<tr>
-<td>毎日再起動時間</td>
-<td>早朝４時30分</td>
-<td>早朝４時</td>
-</tr>
-</tbody>
-</table>
-
+<table><thead><tr><th>項目</th><th>統合版</th><th>JAVA版</th></tr></thead><tbody>
+<tr><td>名前</td><td>dinosaur</td><td>dinosaur</td></tr>
+<tr><td>モード</td><td>サバイバル</td><td>サバイバル</td></tr>
+<tr><td>難易度</td><td>ハード　　</td><td>ハード</td></tr>
+<tr><td>無操作タイムアウト</td><td>30分　　　</td><td>６時間</td></tr>
+<tr><td>最大描画距離    　</td><td>32チャンク</td><td>32チャンク</td></tr>
+<tr><td>シュミレーション距離</td><td>6 チャンク</td><td>10チャンク</td></tr>
+<tr><td>最大人数　　</td><td>20</td><td>20</td></tr>
+<tr><td>毎日再起動時間</td><td>早朝４時30分</td><td>早朝４時</td></tr>
+</tbody></table>
 <h2 id="最後に">最後に</h2>
-
 <p>また、まれにサーバーが落ちてるかもしれないので、その際は<span class="mention">＃Minecraft-サポート</span>などで知らせてください</p>
 
         </div>

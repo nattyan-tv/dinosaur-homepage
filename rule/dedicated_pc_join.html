@@ -12,20 +12,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/style/body.css?last_updated=1668561487.5106938">
+        <link rel="stylesheet" href="/style/body.css?last_updated=1668833944.4535108">
         <link rel="stylesheet" href="/style/header.css">
-        <script>
+        <script> window.addEventListener("load", (_) => {
             // 外部リンクを`target=_blank`にして新しいタブで開くようにする。
-            window.onload = function () {
-                let url;
-                for (element of document.getElementsByTagName("a")) {
-                    url = element.getAttribute("href");
-                    if (!url) continue;
-                    if (!url.startsWith(window.location.origin) && url.startsWith("http"))
-                        element.setAttribute("target", "_blank");
-                };
+            let url;
+            for (element of document.getElementsByTagName("a")) {
+                url = element.getAttribute("href");
+                if (!url) continue;
+                if (!url.startsWith(window.location.origin) && url.startsWith("http"))
+                    element.setAttribute("target", "_blank");
             };
-        </script>
+        }); </script>
         
     </head>
     <body>
@@ -35,178 +33,68 @@
         <hr class="content_border">
         <div id="root">
             <h1 id="はじめに">はじめに</h1>
-
 <p>Ark非公式サーバーサーバーのルールについては<a href="/rule/dedicated_pc.html">こちら</a>。</p>
-
 <h2 id="サーバー">サーバー</h2>
-
 <ul>
 <li>セッション名は全て dinosaur です（イベントは特別な名前です） 
 現在のイベントマップ alphadinosau です</li>
 </ul>
-
 <h1 id="サーバーのアドレス">サーバーのアドレス</h1>
-
-<table>
-<thead>
-<tr>
-<th>マップ名</th>
-<th>アドレス</th>
-<th>備考</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>アイランド</td>
-<td>60.114.86.249:27010</td>
-<td>常時稼働</td>
-</tr>
-<tr>
-<td>スコーチドアース</td>
-<td>60.114.86.249:27021</td>
-<td>常時稼働</td>
-</tr>
-<tr>
-<td>アベレーション</td>
-<td>60.114.86.249:27018</td>
-<td>常時稼働</td>
-</tr>
-<tr>
-<td>エクスティンクション</td>
-<td>60.114.86.249:27011</td>
-<td>常時稼働</td>
-</tr>
-<tr>
-<td>ジェネシス1</td>
-<td>60.114.86.249:27020</td>
-<td>常時稼働</td>
-</tr>
-<tr>
-<td>ジェネシス2</td>
-<td>60.114.86.249:27013</td>
-<td>常時稼働</td>
-</tr>
-<tr>
-<td>センター　　</td>
-<td>60.114.86.249:27022</td>
-<td>常時稼働</td>
-</tr>
-<tr>
-<td>ラグナロク</td>
-<td>60.114.86.249:27015</td>
-<td>常時稼働</td>
-</tr>
-<tr>
-<td>バルゲロ</td>
-<td>60.114.86.249:27012</td>
-<td>常時稼働</td>
-</tr>
-<tr>
-<td>クリスタルアイルズ</td>
-<td>60.114.86.249:27014</td>
-<td>常時稼働</td>
-</tr>
-<tr>
-<td>ロストアイランド</td>
-<td>60.114.86.249:27017</td>
-<td>常時稼働</td>
-</tr>
-<tr>
-<td>フィヨルド</td>
-<td>60.114.86.249:27016</td>
-<td>常時稼働</td>
-</tr>
-<tr>
-<td>イベントマップ</td>
-<td>60.114.86.249:27009</td>
-<td>イベント時のみ</td>
-</tr>
-</tbody>
-</table>
-
+<table><thead><tr><th>マップ名</th><th>アドレス</th><th>備考</th></tr></thead><tbody>
+<tr><td>アイランド</td><td>60.114.86.249:27010</td><td>常時稼働</td></tr>
+<tr><td>スコーチドアース</td><td>60.114.86.249:27021</td><td>常時稼働</td></tr>
+<tr><td>アベレーション</td><td>60.114.86.249:27018</td><td>常時稼働</td></tr>
+<tr><td>エクスティンクション</td><td>60.114.86.249:27011</td><td>常時稼働</td></tr>
+<tr><td>ジェネシス1</td><td>60.114.86.249:27020</td><td>常時稼働</td></tr>
+<tr><td>ジェネシス2</td><td>60.114.86.249:27013</td><td>常時稼働</td></tr>
+<tr><td>センター　　</td><td>60.114.86.249:27022</td><td>常時稼働</td></tr>
+<tr><td>ラグナロク</td><td>60.114.86.249:27015</td><td>常時稼働</td></tr>
+<tr><td>バルゲロ</td><td>60.114.86.249:27012</td><td>常時稼働</td></tr>
+<tr><td>クリスタルアイルズ</td><td>60.114.86.249:27014</td><td>常時稼働</td></tr>
+<tr><td>ロストアイランド</td><td>60.114.86.249:27017</td><td>常時稼働</td></tr>
+<tr><td>フィヨルド</td><td>60.114.86.249:27016</td><td>常時稼働</td></tr>
+<tr><td>イベントマップ</td><td>60.114.86.249:27009</td><td>イベント時のみ</td></tr>
+</tbody></table>
 <h1 id="サーバー参加方法">サーバー参加方法</h1>
-
-<p>2種類の方法でサーバーに参加できます。<br>
-好きな方選んでください。<br>
+<p>2種類の方法でサーバーに参加できます。<br />
+好きな方選んでください。<br />
 （GeForce NOWの方は必然的に2番目の方法になります。）</p>
-
-<p><details>
+<details>
 <summary>IPアドレスでお気に入りに追加(クリックで開く)</summary>
-Steamを起動し、メニューバーから「表示」&gt;「サーバー」を押します。<br>
-Steamをインストールしている方は<a onclick="location.href = 'steam://open/servers'">こちら</a>からも開けます<br>
-<img src="/rule/images/join_1.png" alt="メニューバーから「表示」→「サーバー」">  </p>
-
-<p>次に、お気に入りの欄を選択して「サーバーを追加」を押します。<br>
-<img src="/rule/images/join_2.png" alt="「お気に入り」タブを選択して「サーバーを追加」">  </p>
-
-<p>最後に、上の表のアドレスをコピペして「このアドレスをお気に入りに追加」を押す。<br>
-<img src="/rule/images/join_3.png" alt="IPアドレスを欄に入力して追加">  </p>
-
-<p>ゲームを起動して、「サーバー検索」&gt;「お気に入り」にサーバーがあると思います。<br>
-<a onclick="location.href = 'steam://rungameid/346110'">こちら</a>からもARKが開けます。
-</details></p>
-
-<p><details>
-<summary>ゲーム内の名前検索でお気に入りに追加(クリックで開く)</summary>
-どうやらバグで外れてしまうこともあるらしいです。<br>
-まず、ARKを起動して「サーバー検索」を押します。<br>
-<a onclick="location.href = 'steam://rungameid/346110'">こちら</a>からもARKが開けます。<br>
-<img src="/rule/images/join_4.png" alt="サーバー検索">  </p>
-
-<p>次に検索設定のチェックなどを下の画像又は表の通りにします。<br>
-<img src="/rule/images/join_5.png" alt="検索設定">  </p>
-
-<table>
-<thead>
-<tr>
-<th>設定項目</th>
-<th>値</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>ネームフィルター</td>
-<td>dinosaur（＊）</td>
-</tr>
-<tr>
-<td>マップ</td>
-<td>全マップ</td>
-</tr>
-<tr>
-<td>ゲームモード</td>
-<td>全モード</td>
-</tr>
-<tr>
-<td>ソート順</td>
-<td>名前</td>
-</tr>
-<tr>
-<td>MODありのセッションを含む</td>
-<td>チェックをつける</td>
-</tr>
-<tr>
-<td>プレイしたセッションを自動的にお気に入りにする</td>
-<td>チェックをつける</td>
-</tr>
-<tr>
-<td>パスワードアリを表示</td>
-<td>チェックをつける</td>
-</tr>
-<tr>
-<td>セッションフィルター</td>
-<td>非公式</td>
-</tr>
-</tbody>
-</table>
-
-<p><code>dinosaur</code>という名前のサーバーが出てきたら、追加したいマップをクリックして右下の「お気に入りに追加」<br>
-追加できたサーバーは星マークがつきます。
-＊現在のイベントマップ alphadinosau です<br>
-<img src="/rule/images/join_6.png" alt="追加確認">
+Steamを起動し、メニューバーから「表示」&gt;「サーバー」を押します。  
+Steamをインストールしている方は<a onclick="location.href = 'steam://open/servers'">こちら</a>からも開けます  
+![メニューバーから「表示」→「サーバー」](/rule/images/join_1.png)  
+<p>次に、お気に入りの欄を選択して「サーバーを追加」を押します。<br />
+<img src="/rule/images/join_2.png" alt="「お気に入り」タブを選択して「サーバーを追加」" /></p>
+<p>最後に、上の表のアドレスをコピペして「このアドレスをお気に入りに追加」を押す。<br />
+<img src="/rule/images/join_3.png" alt="IPアドレスを欄に入力して追加" /></p>
+<p>ゲームを起動して、「サーバー検索」&gt;「お気に入り」にサーバーがあると思います。<br />
+<a onclick="location.href = 'steam://rungameid/346110'">こちら</a>からもARKが開けます。</p>
 </details>
-それぞれ、サーバーをお気に入りに追加出来たら、マップを選択して参加します。</p>
+<details>
+<summary>ゲーム内の名前検索でお気に入りに追加(クリックで開く)</summary>
+どうやらバグで外れてしまうこともあるらしいです。  
+まず、ARKを起動して「サーバー検索」を押します。  
+<a onclick="location.href = 'steam://rungameid/346110'">こちら</a>からもARKが開けます。  
+![サーバー検索](/rule/images/join_4.png)  
+<p>次に検索設定のチェックなどを下の画像又は表の通りにします。<br />
+<img src="/rule/images/join_5.png" alt="検索設定" /></p>
+<table><thead><tr><th>設定項目</th><th>値</th></tr></thead><tbody>
+<tr><td>ネームフィルター</td><td>dinosaur（＊）</td></tr>
+<tr><td>マップ</td><td>全マップ</td></tr>
+<tr><td>ゲームモード</td><td>全モード</td></tr>
+<tr><td>ソート順</td><td>名前</td></tr>
+<tr><td>MODありのセッションを含む</td><td>チェックをつける</td></tr>
+<tr><td>プレイしたセッションを自動的にお気に入りにする</td><td>チェックをつける</td></tr>
+<tr><td>パスワードアリを表示</td><td>チェックをつける</td></tr>
+<tr><td>セッションフィルター</td><td>非公式</td></tr>
+<tr><td><code>dinosaur</code>という名前のサーバーが出てきたら、追加したいマップをクリックして右下の「お気に入りに追加」</td><td></td></tr>
+<tr><td>追加できたサーバーは星マークがつきます。</td><td></td></tr>
+<tr><td>＊現在のイベントマップ alphadinosau です</td><td></td></tr>
+<tr><td><img src="/rule/images/join_6.png" alt="追加確認" /></td><td></td></tr>
+</tbody></table>
+</details>
+それぞれ、サーバーをお気に入りに追加出来たら、マップを選択して参加します。
 
         </div>
     </body>

@@ -12,20 +12,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/style/body.css?last_updated=1668561487.5211048">
+        <link rel="stylesheet" href="/style/body.css?last_updated=1668833944.465389">
         <link rel="stylesheet" href="/style/header.css">
-        <script>
+        <script> window.addEventListener("load", (_) => {
             // 外部リンクを`target=_blank`にして新しいタブで開くようにする。
-            window.onload = function () {
-                let url;
-                for (element of document.getElementsByTagName("a")) {
-                    url = element.getAttribute("href");
-                    if (!url) continue;
-                    if (!url.startsWith(window.location.origin) && url.startsWith("http"))
-                        element.setAttribute("target", "_blank");
-                };
+            let url;
+            for (element of document.getElementsByTagName("a")) {
+                url = element.getAttribute("href");
+                if (!url) continue;
+                if (!url.startsWith(window.location.origin) && url.startsWith("http"))
+                    element.setAttribute("target", "_blank");
             };
-        </script>
+        }); </script>
         
     </head>
     <body>
@@ -35,21 +33,15 @@
         <hr class="content_border">
         <div id="root">
             <h1 id="はじめに">はじめに</h1>
-
 <p>Ark非公式サーバーサーバーのルールについては<a href="/rule/dedicated_pc.html">こちら</a>。</p>
-
 <h1 id="サーバー導入MOD">サーバー導入MOD</h1>
-
-<h2>　便利MOD</h2>
-
+<p>##　便利MOD</p>
 <ul>
 <li>ベストエッグ <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1931415003">MODページ</a></li>
 <li>スパイグラス　<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1404697612">MODページ</a></li>
 <li>転送不可アイテムを転送可能にする　<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2044129379">MODページ</a></li>
 </ul>
-
 <h2 id=" 建築MOD"> 建築MOD</h2>
-
 <ul>
 <li>スナップポイント追加MOD　<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=854186603">MODページ</a></li>
 <li>庭装飾追加MOD<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=880871931">MODページ</a></li>
@@ -60,27 +52,18 @@
 <li>ウエスタン風建造物追加MOD　<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1091147617">MODページ</a></li>
 <li>ライト追加MOD　<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1380777369">MODページ</a></li>
 </ul>
-
 <h2 id="サーバー管理用MOD（基本的に皆さんは使いません）  ">サーバー管理用MOD（基本的に皆さんは使いません）  </h2>
-
 <ul>
 <li>サーバー管理等に使うmod　<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2566418613">MODページ</a></li>
 <li>建築不可エリアなどを作れるMOD　<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1295978823">MODページ</a></li>
 </ul>
-
 <h1 id="使い方解説動画 ">使い方解説動画 </h1>
-
 <p>便利MODは見ることをお勧めします
 建築MODは建築前に見ることをお勧めします</p>
-
 <h2 id="便利MOD解説">便利MOD解説</h2>
-
 <iframe class="video" src="https://youtu.be/Fl_ZgEowdFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
 <h2 id="建築MOD紹介　解説">建築MOD紹介　解説</h2>
-
 <iframe class="video" src="https://youtu.be/BgaWCCvpjsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
         </div>
     </body>
 </html>

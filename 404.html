@@ -12,20 +12,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/style/body.css?last_updated=1668561487.4997258">
+        <link rel="stylesheet" href="/style/body.css?last_updated=1668833944.441027">
         <link rel="stylesheet" href="/style/header.css">
-        <script>
+        <script> window.addEventListener("load", (_) => {
             // 外部リンクを`target=_blank`にして新しいタブで開くようにする。
-            window.onload = function () {
-                let url;
-                for (element of document.getElementsByTagName("a")) {
-                    url = element.getAttribute("href");
-                    if (!url) continue;
-                    if (!url.startsWith(window.location.origin) && url.startsWith("http"))
-                        element.setAttribute("target", "_blank");
-                };
+            let url;
+            for (element of document.getElementsByTagName("a")) {
+                url = element.getAttribute("href");
+                if (!url) continue;
+                if (!url.startsWith(window.location.origin) && url.startsWith("http"))
+                    element.setAttribute("target", "_blank");
             };
-        </script>
+        }); </script>
         <script>
     setTimeout("link()", 10000);
     function link(){
@@ -39,12 +37,11 @@
         </header>
         <hr class="content_border">
         <div id="root">
-            <p><center>
+            <center>
     <h3>404 - Not Found</h3>
     <div>ページが見つかりませんでした。</div>
     <div>10秒後に自動的にTOPに戻ります。</div>
-<center></p>
-
+<center>
         </div>
     </body>
 </html>

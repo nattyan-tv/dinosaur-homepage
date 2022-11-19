@@ -12,20 +12,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/style/body.css?last_updated=1668561487.5059626">
+        <link rel="stylesheet" href="/style/body.css?last_updated=1668833944.4482155">
         <link rel="stylesheet" href="/style/header.css">
-        <script>
+        <script> window.addEventListener("load", (_) => {
             // 外部リンクを`target=_blank`にして新しいタブで開くようにする。
-            window.onload = function () {
-                let url;
-                for (element of document.getElementsByTagName("a")) {
-                    url = element.getAttribute("href");
-                    if (!url) continue;
-                    if (!url.startsWith(window.location.origin) && url.startsWith("http"))
-                        element.setAttribute("target", "_blank");
-                };
+            let url;
+            for (element of document.getElementsByTagName("a")) {
+                url = element.getAttribute("href");
+                if (!url) continue;
+                if (!url.startsWith(window.location.origin) && url.startsWith("http"))
+                    element.setAttribute("target", "_blank");
             };
-        </script>
+        }); </script>
         
     </head>
     <body>
@@ -35,27 +33,20 @@
         <hr class="content_border">
         <div id="root">
             <h1 id="はじめに">はじめに</h1>
-
 <p>Minecraftサーバーのルールについては<a href="/rule/dedicated_minecraft.html">こちら</a>。</p>
-
 <h1 id="統合版参加方法 ">統合版参加方法 </h1>
-
-<p>まずMinecraftを開き　サーバー　の項目を開きます。<br>
-サーバーの追加というボタンを押します<br>
-<img src="/rule/images/M_join_1.png" alt="サーバーの追加というボタンを押します">  </p>
-
-<p>サーバー名は個人が自由に設定できます。サーバーアドレスとポートは写真のように登録してください<br>
-<img src="/rule/images/M_join_2.png" alt="サーバーアドレス:60.114.86.249  ポート:19132">  </p>
-
-<p>保存を押して登録完了です。<br>
-Switch版は本体設定などを変えて特殊な手順で登録します。ご自分で調べて写真の通りに登録してください。
+<p>まずMinecraftを開き　サーバー　の項目を開きます。<br />
+サーバーの追加というボタンを押します<br />
+<img src="/rule/images/M_join_1.png" alt="サーバーの追加というボタンを押します" /></p>
+<p>サーバー名は個人が自由に設定できます。サーバーアドレスとポートは写真のように登録してください<br />
+<img src="/rule/images/M_join_2.png" alt="サーバーアドレス:60.114.86.249  ポート:19132" /></p>
+<p>保存を押して登録完了です。<br />
+Switch版は本体設定などを変えて特殊な手順で登録します。ご自分で調べて写真の通りに登録してください。</p>
 <h1 id="JAVA版参加方法">JAVA版参加方法</h1>
-まずMinecraftを開き　マルチプレイ　の項目を開きます。<br>
+<p>まずMinecraftを開き　マルチプレイ　の項目を開きます。<br />
 サーバーの追加というボタンを押します </p>
-
 <p>サーバー名は個人が自由に設定できます。サーバーアドレスは
-<q>60.114.86.249</q>です</p>
-
+&quot;60.114.86.249&quot;です</p>
 <p>完了を押して登録完了です</p>
 
         </div>
