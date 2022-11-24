@@ -33,7 +33,7 @@ Ark非公式サーバーサーバーのルールについては[こちら](/rule
 
 ## 便利MOD解説
 
-<iframe class="video" src="https://www.youtube.com/embed/ZgEowdFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/Fl_ZgEowdFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 ## 建築MOD紹介　解説
 
