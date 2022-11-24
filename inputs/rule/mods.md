@@ -6,13 +6,13 @@ Ark非公式サーバーサーバーのルールについては[こちら](/rule
 
 # サーバー導入MOD
 
-##　便利MOD
+## 便利MOD
   * ベストエッグ [MODページ](https://steamcommunity.com/sharedfiles/filedetails/?id=1931415003)
   * スパイグラス　[MODページ](https://steamcommunity.com/sharedfiles/filedetails/?id=1404697612)
   * 転送不可アイテムを転送可能にする　[MODページ](https://steamcommunity.com/sharedfiles/filedetails/?id=2044129379)
   
 
-##  建築MOD
+## 建築MOD
   * スナップポイント追加MOD　[MODページ](https://steamcommunity.com/sharedfiles/filedetails/?id=854186603)
   * 庭装飾追加MOD[MODページ](https://steamcommunity.com/sharedfiles/filedetails/?id=880871931)
   * 水槽追加MOD　[MODページ](https://steamcommunity.com/sharedfiles/filedetails/?id=880887081)
@@ -33,8 +33,8 @@ Ark非公式サーバーサーバーのルールについては[こちら](/rule
 
 ## 便利MOD解説
 
-<iframe class="video" src="https://youtu.be/Fl_ZgEowdFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/ZgEowdFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 ## 建築MOD紹介　解説
 
-<iframe class="video" src="https://youtu.be/BgaWCCvpjsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/BgaWCCvpjsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
