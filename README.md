@@ -4,9 +4,10 @@ The dinosaur server's homepage
 Page styling: [nira](https://github.com/Niranuranura)/[NattyanTV](https://github.com/nattyan-tv)  
 SSG Scripting: [tasuren](https://github.com/tasuren)
 
+# How to serve homepage
+1. Clone this repository.
+2. Install requirements. (`pip install - requirements.txt`)
+3. Run `nisshi build`.
+4. Builded files are in `outputs` directory.
 
-# Hosting
-Hosting by GitHub Pages and using [tasuren/nisshi](https://github.com/tasuren/nisshi) (Extended)  
-
-# LICENSE
-To see [LICENSE](https://github.com/nattyan-tv/dinosaur-homepage/LICENSE) file.
+For example, `python3 -m http.server` can serve the homepage.
